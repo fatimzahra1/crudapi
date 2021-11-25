@@ -15,10 +15,10 @@ app = FastAPI()
 app.include_router(student_router)
 
 #Register App with CORS middleware to allow resourse sharing between different domains/origins
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=client_apps,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"]
-)
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=client_apps,
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"]
+# )
