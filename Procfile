@@ -1,1 +1,1 @@
-web: gunicorn crudapi:app
+web: gunicorn crudapi.index --log-file -
