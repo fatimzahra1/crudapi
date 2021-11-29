@@ -6,6 +6,10 @@ from bson import ObjectId
 
 student_router = APIRouter()
 
+@student_router.get('/')
+async def find_all_students():
+     return listOfStudentEntity(db.students.students.find())
+
 @student_router.get('/students')
 async def find_all_students():
      return listOfStudentEntity(db.students.students.find())
