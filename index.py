@@ -2,10 +2,6 @@ from fastapi import FastAPI
 from routes.student import student_router
 from fastapi.middleware.cors import CORSMiddleware
 
-client_apps = ['http:localhost:3000']#Our react app will be running here
-from fastapi import FastAPI
-from routes.student import student_router
-from fastapi.middleware.cors import CORSMiddleware
 
 client_apps = ['http://localhost:3000']#Our REACT app will be running on this IP and PORT
 
