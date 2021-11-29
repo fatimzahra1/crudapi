@@ -8,7 +8,7 @@ student_router = APIRouter()
 
 @student_router.get('/')
 async def find_all_students():
-     return listOfStudentEntity(db.students.students.find())
+     return {"message":"Hello TutLinks.com"}
 
 @student_router.get('/students')
 async def find_all_students():
