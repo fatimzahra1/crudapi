@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from models.student import Student
+from model.student import Student
 from config.database import db
 from schemas.student import studentEntity, listOfStudentEntity
 from bson import ObjectId
